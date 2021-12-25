@@ -4,7 +4,7 @@
 * Python 3.10;
 * Flask 2.0.2;
 * Database type - SQLite.
-__
+
 ### Home page:<br>
 ![Can't load image](documentation/img/NoisyNotesIndex.JPG)<br>
 #### Abilities:
