@@ -82,6 +82,3 @@ class TestApplication(unittest.TestCase):
 		"""Test for delete song get method."""
 		r = TestApplication.app.get(TestApplication.DELETE_SONG)
 		self.assertEqual(r.status_code, 302)
-
-#if __name__ == '__main__':
-#	unittest.main()
