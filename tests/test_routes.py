@@ -1,5 +1,4 @@
 import unittest 
-import requests
 from website import create_app, Session
 from website.views import get_last_id
 from website.models import Song
