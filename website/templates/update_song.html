@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}Update {{ song.songname }}{% endblock %}
+
+{% block body %}
+<div class="container mt-5">
+				<h1>Change info about song</h1>
+				<form method="post">
+					<input type="text" class="form-control" id="songname" name="songname" value="{{ song.songname }}" placeholder="Your songname"> <br>
+					<input type="text" class="form-control" id="songauthor" name="songauthor" value="{{song.author}}" placeholder="Song author name"> <br>
+					<textarea name="lyrics" id="lyrics" placeholder="Your song lyrics(optional)" class="form-control">{{song.lyrics}}</textarea>
+					<br>
+					<input type="submit" class="btn btn-dark" value="Update">
+				</form>
+			</div>
+{% endblock %}

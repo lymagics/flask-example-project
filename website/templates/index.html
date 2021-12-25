@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}Noisy Notes{% endblock %}
+
+{% block body %}
+			<div class="songs">
+				<div class="container">
+                    {% for songs in preproc_songs %}
+					<div class="row">
+                        {% for song in songs %}
+						<div class="col-md-4">
+							<div class="song">
+								<p>{{song.songname}} - {{song.author}}</p>
+								<a type="button" class="btn btn-secondary" href="/about_song/{{song.id_}}">About Song</a>
+								<audio controls="controls">
+									<source src="{{ url_for('static', filename='/audio/' ~ song.id_ ~ '.mp3') }}">
+								</audio>
+							</div>
+						</div>
+                       {% endfor %}
+					</div>
+                    {% endfor %}
+				</div>
+
+			</div>
+{% endblock %}

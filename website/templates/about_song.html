@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ song.author }} - {{ song.songname }}{% endblock %}
+
+{% block body %}
+			<div class="about-song">
+				<div class="container">
+					<div class="song-info">
+						<h1>{{ song.songname }} - {{ song.author }}</h1>
+						<a href="/like/{{song.id_}}" type="button" class="btn btn-success">Like song</a>
+					</div>
+					<br>
+					<audio controls="controls">
+						<source src="{{ url_for('static', filename='/audio/' ~ song.id_ ~ '.mp3') }}">
+					</audio>
+					<details>
+						<summary>Lyrics</summary>
+						<pre>{{ song.lyrics }}</pre>
+					</details> <br>
+					<p>Total likes: {{ song.likes }}</p>
+					<br>
+					<br>
+					<a href="/update/{{song.id_}}" type="button" class="btn btn-warning">Update info</a>
+					<a href="/delete/{{song.id_}}" type="button" class="btn btn-danger">Remove song from app</a>
+				</div>
+			</div>
+{% endblock %}

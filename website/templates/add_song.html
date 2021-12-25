@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}Add song{% endblock %}
+
+{% block body %}
+
+			<div class="container mt-5">
+				<h1>Add your own song</h1>
+				<form method="post" enctype="multipart/form-data">
+					<input type="text" class="form-control" id="songname" name="songname" placeholder="Your songname"> <br>
+					<input type="text" class="form-control" id="songauthor" name="songauthor" placeholder="Song author name"> <br>
+					<textarea name="lyrics" id="lyrics" placeholder="Your song lyrics(optional)" class="form-control"></textarea>
+					<br>
+					<input type="file" accept="audio/*" name='song' id="song">
+					<br> <br>
+					<input type="submit" class="btn btn-dark" value="Upload">
+					<input type="reset" class="btn btn-warning" value="Reset">
+				</form>
+			</div>
+			
+{% endblock %}

@@ -1,0 +1,126 @@
+h1	{
+	color: black;
+}
+
+body {
+	background-color: lightgreen;
+}
+
+.header {
+	padding: 5px 5px;
+	background-color: black;
+}
+
+.header a {
+	text-decoration: none;
+	font-size: 20px;
+	color: white;
+}
+
+.header li {
+	list-style-type: none;
+	display: inline-block;
+	padding-right: 20px;
+}
+
+.header ul a:hover {
+	border-bottom: 2px solid green;
+} 
+
+.header ul {
+	display: inline-block;
+	float: right;
+	justify-content: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#add_music {
+	font-size: 15px;
+	width: 99px;
+	height: 38px;
+}
+
+#add_music:hover {
+	border-bottom: none;
+}
+
+#main {
+	font-size: 30px;
+}
+
+#main:hover {
+	color: white;
+}
+
+.song {
+	margin-top: 30px;
+	font-size: 20px;
+}
+
+.song button, p {
+	float: left;
+	margin-right: 10px;
+}
+
+.song button:hover {
+	color: lightgreen;
+}
+
+.footer-menu a{
+	text-decoration: none; 
+	color: black;
+}
+
+.footer-menu a:hover {
+	color: grey;
+}
+
+.footer-menu li {
+	list-style-type: none;
+	display: inline;
+	margin-right: 15px;
+	font-size: 15px;
+}
+
+.footer-menu ul {
+	margin-top: 30px;
+}
+
+.footer-menu {
+	text-align: center;
+}
+
+.footer-menu hr {
+	border-top: 1px solid black;
+	margin-top: 30px;
+}
+
+.footer p {
+	margin-top: 10px;
+	font-size: 15px;
+	margin-left: 43%;
+}
+
+.song-info h1{
+	float: left;
+	margin-right: 10px;
+}
+
+.about-song {
+	margin-top: 20px;
+}
+
+.song-info button {
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.song-info button:hover {
+	color: lightgreen;
+}
+
+
+
+
+
