@@ -49,6 +49,10 @@ def add_song():
 		lyrics = request.form['lyrics']
 		song = request.files['song']
 
+		for data in (songname, author, lyrics, song):
+			if not data:
+				return redirect('/')
+				
 		new_song = Song()
 		new_song.songname = songname
 		new_song.author = author
